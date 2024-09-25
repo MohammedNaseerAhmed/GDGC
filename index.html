@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store - Amazon Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fake Store - Shop Like Amazon</h1>
+        <input type="text" id="searchBar" placeholder="Search for products...">
+    </header>
+
+    <div class="main-container">
+        <!-- Left side: Products -->
+        <div id="product-list" class="product-list"></div>
+
+        <!-- Right side: Cart and Order Summary -->
+        <div class="cart-container">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Amount: <span id="total-price">$0.00</span></p>
+                <p>Discount: <span id="discount">-$0.00</span></p>
+                <p>Platform Fee: <span id="platform-fee">$5.00</span></p>
+                <p><strong>Total MRP: <span id="total-mrp">$0.00</span></strong></p>
+                <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
